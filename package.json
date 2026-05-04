@@ -3,7 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Local-first interactive money and banking learning panel.",
+  "description": "Interactive learning system for Money and Banking chapters.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jixu1117/money-finance-panel.git"
+  },
+  "keywords": [
+    "interactive-textbook",
+    "finance",
+    "learning-dashboard"
+  ],
   "scripts": {
     "start": "node server.mjs",
     "test": "node tests/model.test.mjs"

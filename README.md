@@ -13,6 +13,8 @@
 
 ## 本地运行
 
+需要 Node.js 20 或以上版本。项目没有第三方 npm 依赖，clone 后可以直接启动。
+
 ```bash
 npm start
 ```
@@ -29,6 +31,12 @@ http://localhost:3000
 PORT=3100 npm start
 ```
 
+也可以使用启动脚本：
+
+```bash
+./run.sh
+```
+
 ## 测试
 
 ```bash
@@ -36,6 +44,8 @@ npm test
 ```
 
 ## Docker 运行
+
+需要先启动 Docker Desktop 或 Docker daemon。
 
 ```bash
 docker build -t money-finance-panel .
