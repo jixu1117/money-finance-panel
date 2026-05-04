@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>货币金融学交互学习系统</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div>
+          <p class="eyebrow">Interactive textbook</p>
+          <h1>货币金融学交互学习系统</h1>
+        </div>
+        <button class="ghost-button" id="resetProgress" type="button" title="清空本地进度">重置</button>
+      </header>
+
+      <main class="layout">
+        <aside class="sidebar" aria-label="章节目录">
+          <div class="hero-copy">
+            <p>结构化章节、图表、测验和可调参数模型</p>
+            <h2>把货币金融学变成能动手学习的交互界面</h2>
+          </div>
+
+          <div class="stats-row">
+            <div>
+              <strong id="chapterCount">4</strong>
+              <span>模块</span>
+            </div>
+            <div>
+              <strong id="quizDone">0</strong>
+              <span>已掌握</span>
+            </div>
+            <div>
+              <strong id="progressPct">0%</strong>
+              <span>进度</span>
+            </div>
+          </div>
+
+          <div class="catalog" id="catalog"></div>
+        </aside>
+
+        <section class="workspace" aria-live="polite">
+          <nav class="chapter-tabs" id="chapterTabs" aria-label="章节切换"></nav>
+          <article class="chapter-panel">
+            <div class="chapter-head">
+              <div>
+                <p class="eyebrow" id="chapterNumber"></p>
+                <h2 id="chapterTitle"></h2>
+                <p id="chapterKicker"></p>
+              </div>
+              <span class="badge" id="chapterBadge"></span>
+            </div>
+
+            <section class="summary-grid" id="summaryGrid"></section>
+            <section class="insight-grid" id="insightGrid"></section>
+            <section class="detail-stage" id="detailStage"></section>
+            <section class="module-stage" id="moduleStage"></section>
+            <section class="quiz-box" id="quizBox"></section>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

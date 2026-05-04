@@ -1,0 +1,14 @@
+{
+  "name": "money-finance-panel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-first interactive money and banking learning panel.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tests/model.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
