@@ -14,7 +14,6 @@
 ## 本地运行
 
 ```bash
-cd "/Users/Shared/Files From d.localized/btc-strategy/money-finance-panel"
 npm start
 ```
 
@@ -39,7 +38,6 @@ npm test
 ## Docker 运行
 
 ```bash
-cd "/Users/Shared/Files From d.localized/btc-strategy/money-finance-panel"
 docker build -t money-finance-panel .
 docker run --rm -p 3000:3000 money-finance-panel
 ```
